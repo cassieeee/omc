@@ -1,0 +1,394 @@
+/***********************reset***********************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    zoom: 1;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, article, section, nav, menu, hgroup {
+    display: block;
+    clear: all;
+}
+
+html {
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    -ms-text-size-adjust: auto;
+    -webkit-text-size-adjust: auto;
+    height: 100%;
+    /*font-size: 10px;    */
+}
+
+body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    /*height: 100%;*/
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+a {
+    /*color:#fff;*/
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:active {
+    outline: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #cccccc;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none outside none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+
+/*************************banner和tab****************************/
+.banner{
+    width: 100%;
+    height:600px;
+    background: url('../images/product-center/product-center-banner.png') no-repeat;
+    background-size:100% 100%; 
+    position: relative;
+}
+.banner .topdesc{
+    margin:0 auto;
+    width:1180px;
+}
+.banner .topdesc .bottom-line-block{
+    margin-top: 30px;
+    font-size: 0;
+}
+.banner .topdesc .bottom-line-block div{
+    display: inline-block;
+}
+.banner .topdesc .bottom-line-block .line1{
+    background: #ff00ff;
+    width:4px;
+    height:4px;
+
+}
+.banner .topdesc .bottom-line-block .line2{
+    background: #2455d2;
+    width: 26px;
+    height:4px;
+    margin-left:4px;
+}
+.banner h1{
+    padding-top:210px;
+    color:#fff;
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: bold;
+}
+.banner .desc{
+    color:#fff;
+    font-size: 21px;
+    line-height: 30px;
+    width: 560px;
+    margin-top:30px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.banner .desc-eng{
+    font-size: 40px;
+    line-height: 38px;
+    margin-top:20px;
+}
+.tab{
+    background: url('../images/common-tab-bg.png') repeat-y;
+    background-size:100% auto;
+    height:60px;
+    width:100%;
+    text-align: center;
+}
+.tab ul{
+    margin: 0 auto;
+    width:1000px;
+}
+.tab ul li{
+    display: inline-block;
+    width:33%;
+    line-height: 60px;
+    color:rgba(255,255,255,0.8);
+    font-size:16px;
+    cursor: pointer;
+    position: relative;
+    background: url('../images/tab-highlight.png') center 60px no-repeat;
+    background-size: 100% auto;
+    -ms-transition: background-position .3s;
+    -moz-transition: background-position .3s;
+    -webkit-transition: background-position .3s;
+    -o-transition: background-position .3s;
+    transition:background-position .3s;
+    
+}
+.tab ul li:hover,.tab ul .on{
+    background: url('../images/tab-highlight.png') center no-repeat;
+    background-size: 100% 60px;
+}
+.tab ul li:hover a,.tab ul .on a{
+    font-weight: bold;
+}
+.tab ul li img{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    opacity: 0;
+}
+.tab ul a{
+    display: block;
+    color:#fff;
+    font-size:16px;
+    cursor: pointer;
+}
+
+
+/*标题样式*/
+.main{
+    width:1180px;
+    margin:0px auto 90px;
+}
+.main .education{
+    padding:80px 0 0;
+}
+.common-title{
+    font-size: 32px;
+    color:#2e3d50;
+    position: relative;
+    margin: 0 auto;
+    line-height: 66px;
+    margin-bottom:40px;
+    text-align: center;
+}
+.common-title span{
+    display: inline-block;
+    margin:0 auto;
+    position: relative
+}
+.common-title h2 p{
+    display: inline-block;
+}
+.common-title .linetop1{
+    width:15px;
+    height: 2px;
+    background: #fc00ff;
+    margin:0 auto;
+    position: absolute;
+    left:-8px;
+}
+.common-title .linetop2{
+    width:4px;
+    height: 2px;
+    background: #ffba00;
+    margin:0 auto;
+    position: absolute;
+    left:12px;
+}
+.common-title .linebottom1{
+    height: 2px;
+    background: #fc00ff;
+    width:6px;
+    margin:0 auto;
+    position: absolute;
+    right:18px;
+    bottom:0px;
+}
+.common-title .linebottom2{
+    width:30px;
+    height: 2px;
+    background: #00b3ff;
+    margin:0 auto;
+    position: absolute;
+    right:-15px;
+    bottom:0px;
+}
+.main a{
+    display: inline-block;
+    /*width:380px;*/
+    margin-right:20px;
+    font-size: 0;
+}
+.main .item{
+    -webkit-transition: transform .3s;
+    -ms-transition: transform .3s;
+    -moz-transition: transform .3s;
+    -o-transition: transform .3s;
+    transition:transform .3s;
+}
+.main .item:hover{
+    box-shadow:10px 14px 26px rgba(209,230,255,0.3),-10px 14px 26px rgba(209,230,255,0.3);
+    cursor: pointer;
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+/*广告*/
+.ad{
+    margin:80px auto 0;
+    position: relative;
+     width:100%;
+     height:100%;
+}
+.ad .ad-content{
+   width:80%;
+    position: absolute;
+    top:60px;
+    left:50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color:#fff;
+    text-align: center;
+}
+.ad img{
+    width: 100%;
+    height:300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.ad .ad-content .content-desc{
+    font-size: 48px;
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ad .ad-content .content-btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width:180px;
+    height:50px;
+    line-height: 50px;
+    background: -webkitlinear-gradient(to right,rgb(43,104,255),rgb(159,97,217));
+    background: linear-gradient(to right,rgb(43,104,255),rgb(159,97,217));
+    filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='rgb(43,104,255)',endColorStr='rgb(159,97,217)',gradientType='1'); 
+    margin:50px 0 0;
+    color:#fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+/*详情页新手引导*/
+.first-guide{
+    position: fixed;
+    top:0;
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    width:100%;
+    margin: 0 auto;
+    z-index:99999;
+}
+.first-guide .linehigh{
+    width:80px;
+    height:80px;
+    border-radius: 5px;
+    background: #fff;
+    position: fixed;
+    top:68%;
+    left:4%;
+}
+.first-guide .guide-txt{
+    position: fixed;
+    top:72%;
+    left:7%;
+}
+.first-guide .guide-btn{
+    position: fixed;
+    top:85%;
+    left:22%;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}

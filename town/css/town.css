@@ -1,0 +1,272 @@
+/***********************reset***********************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    zoom: 1;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, article, section, nav, menu, hgroup {
+    display: block;
+    clear: all;
+}
+
+html {
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    -ms-text-size-adjust: auto;
+    -webkit-text-size-adjust: auto;
+    height: 100%;
+    /*font-size: 10px;    */
+}
+
+body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    /*height: 100%;*/
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+
+a {
+    /*color:#fff;*/
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:active {
+    outline: 0;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #cccccc;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none outside none;
+}
+
+i, em {
+    font-style: normal;
+}
+
+/**************main*******************/
+.page-nav-container {
+    position: relative;
+    height: 108px;
+}
+.page-nav {
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 1000
+}
+.page-nav>.nav-item {
+    position: relative;
+    display: inline-block;
+    height: 108px;
+    padding: 36px 48px;
+    color: #333;
+    font-size: 22px;
+    text-decoration: none;
+}
+.page-nav>.nav-item:hover {
+    text-decoration: none;
+    color: #999;
+    cursor: pointer;
+}
+.page-nav>.nav-item.active {
+    color: #FF8D00;
+     text-decoration: none;
+}
+.page-nav>.nav-item:not(:last-child):after {
+    position: absolute;
+    right: 0;
+    height: 32px;
+    width: 1px;
+    background-color: #ddd;
+    content: ' '
+}
+.main{
+    background-color:#fff;
+}
+.block .title{
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    padding-top: 30px;
+   
+    color: #0b6fd7;
+}
+.block .text{
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+.block .text h3{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0b6fd7;
+	line-height: 50px;
+}
+.block .text p{
+    text-indent: 2em;
+    line-height: 32px;
+    margin-bottom:10px;
+    color: #333;
+    font-size: 16px;
+}
+#development,#culture,#industry{
+    width: 100%;
+    text-align: center;
+}
+#development .title{
+    margin-bottom: 30px;
+}
+.content{
+	width:1100px;
+    margin: 50px auto 0;
+    padding:0 20px;
+    text-align: center;
+}
+.content div{
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
+	margin-right:30px;
+}
+
+.content div:nth-child(2n){
+    margin-right:0px;
+}
+.content img{
+    width:100%;
+}
+.content p{
+    font-size: 1.2em;
+    line-height: 60px;
+    color: #333;
+}
+.block .img-block{
+    width: 1100px;
+    margin: 0 auto;
+}
+.block .img-block img{
+    width:100%;
+    margin-top:30px;
+}
+
+#development img{
+    /*width:1055px;*/
+}
+#introduce,#industry,#materials{
+    background:rgba(255,242,233,.3);
+}
+#development,#culture{
+    background: rgba(237,244,255,.3);
+}
+.block{
+    padding-bottom:80px;
+}
+#culture .img-block img{
+    transform: scale(0.9);
+}
+
+/***********右侧固定的三个菜单**************/
+.right-nav{
+    position: fixed;
+    top:50%;
+    right:2%;
+    z-index: 999;
+    display: none;
+}
+.right-nav div{
+    width:55px;
+    height:55px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+.right-nav div:hover{
+     background-color:#0066ff;
+}
+.right-nav .top-block{
+    background: url('../images/top-icon.png')center no-repeat;
+    background-size: 80% 60%;
+    background-color:#31373f; 
+}
+.img1 img:hover{
+    opacity:.8;
+    cursor:pointer;
+}

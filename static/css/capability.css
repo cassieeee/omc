@@ -1,0 +1,95 @@
+.banner{
+    background: url('../images/capability/banner.png') no-repeat;
+    background-size: 100% 100%;
+}
+.banner .topdesc .bottom-line{
+    background: #ffb033;
+}
+.capability{
+    margin: 40px auto 90px;
+}
+.capability .block .item{
+    display: inline-block;
+    background: #fff;
+    border-radius:5px; 
+    height:400px;
+    width:380px;
+    margin-bottom:20px;
+    position: relative;
+    cursor: default;
+}
+/*.capability .block .item:hover{
+    box-shadow:0 0 18px #eeeeee; 
+}*/
+.capability .block .item .item-img{
+    width:100%;
+    height:140px;
+    overflow: hidden;
+}
+.capability .block .item .item-img img{
+    width:380px;
+    border-top-left-radius:5px; 
+    border-top-right-radius: 5px;
+}
+.capability .block .item .item-title{
+    margin:16px 0;
+    color:#2e3d50;
+    font-size: 18px;
+    padding:0 16px;
+    width:365px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.capability .block .item .item-desc{
+    color:#6c737e;
+    font-size: 14px;
+    line-height: 22px;
+    padding:0 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+    height: 180px;
+}
+.capability .block{
+    font-size:0;
+}
+.capability .block .item {
+    display: inline-block;
+    width: 380px;
+    margin-right: 20px;
+}
+.capability .block .item:nth-child(3n+3){
+    margin-right:0;
+}
+@media screen and ( max-width: 1200px ) and ( min-width: 960px ){
+    .banner{
+        background: url(../images/capability/banner@2x.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .capability .block .item{
+        width:32%;
+        height:auto;
+    }
+    .capability .block .item{
+        margin-right:2%;
+    }
+    .capability .block .item:nth-child(3n+3){
+        margin-right:0;
+    }
+    .capability .block .item .item-img img{
+        width:100%;
+    }
+    .capability .block .item:hover{
+        box-shadow: none;
+        background: #eee;
+        transform: none;
+    }
+    .capability .block .item .item-title{
+        width:100%;
+    }
+    .capability .block .item .item-img{
+        height:auto;
+    }
+}

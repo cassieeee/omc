@@ -1,0 +1,133 @@
+.solution-tab ul li{
+    width:24%;
+}
+.solution .education .title-add{
+    /*width:368px;*/
+}
+.solution .education .item{
+    display: inline-block;
+    background: #fff;
+    border-radius:5px; 
+    height:400px;
+    width:380px;
+    margin-bottom:20px;
+    position: relative;
+    cursor: pointer;
+}
+.solution .education .item .item-img{
+    width:100%;
+    height:140px;
+    overflow: hidden;
+}
+.solution .education .item .item-img img{
+    width:380px;
+    border-top-left-radius:5px; 
+    border-top-right-radius: 5px;
+}
+.solution .education .item .item-title{
+    margin:16px 0;
+    color:#333333;
+    font-size: 18px;
+    padding-left:15px;
+    width:365px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.solution .education .item .item-desc{
+    color:#666666;
+    font-size: 14px;
+    line-height: 22px;
+    padding:0 17px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    height: 135px;
+}
+.main .education .item .item-more {
+    font-size: 25px;
+    color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.main .education .item:hover >.item-more{
+    color:#0078ff;
+    border:1px solid #0078ff;
+}
+.main .education a{
+    margin-right: 20px;
+}
+.main .education a:nth-child(3n+4){
+    margin-right:0;
+}
+
+@media screen and ( min-width: 1201px ){
+    .banner{
+        background: url('../images/solution/banner.png') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+@media screen and ( max-width: 1200px ) and ( min-width: 960px ){
+
+    .banner{
+        background: url('../images/solution/banner@2x.png') no-repeat;
+        background-size: 100% 100%;
+    }
+    .main .education .item{
+        width:100%;
+        height:auto;
+        padding-bottom: 7%;
+    }
+    .main .education .item .item-more{
+        position: relative;
+        right:0;
+        bottom:0;
+        float: right;
+        margin-right: 5%;
+        margin-top:8%;
+        line-height: 38px;
+    }
+    .main .education .item:hover .item-more{
+        color: #cfcfcf;
+        border: 1px solid #cfcfcf;
+    }
+    .main .education a{
+        margin-right: 2%;
+    }
+    .solution .education .item .item-img {
+        width: 100%;
+         height: 0;
+        overflow: hidden;
+        padding-top: 36%;
+        position: relative;
+    }
+    .solution .education .item .item-img img{
+        width:100%;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .solution .education .item .item-title{
+        width:100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    .solution .education .item .item-desc{
+        text-align: left;
+        height:150px;
+        -webkit-line-clamp: 7;
+    }
+
+}

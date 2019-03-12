@@ -1,0 +1,126 @@
+/*----------------main---------------*/
+
+
+.main .education .item{
+    display: inline-block;
+    background: #fff;
+    border-radius:5px;
+    padding:20px 16px 0;
+    margin-top:30px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.main .education a:nth-child(3n+4){
+    margin-right:0;
+}
+.main .education .item-img{
+    height:80px;
+    margin:25px auto 20px;
+    position: relative;
+}
+.main .education .item-img img{
+    max-height:80px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+.main .education .item .item-title{
+    color:#2e3d50;
+    font-size: 18px;
+    font-weight: bold;
+    /*line-height: 40px;*/
+}
+.main .education .item .item-desc{
+    color:#6c737e;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top:20px;
+}
+.main .education .item .item-more{
+    font-size: 25px;
+    color:#cfcfcf;
+    border:1px solid #cfcfcf;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    /*position: absolute;*/
+    /*right:16px;*/
+    /*bottom:15px;*/
+    float: right;
+}
+
+@media screen and ( min-width:1201px ){
+    .main a{
+        margin-right:20px;
+    }
+    .main .education .item{
+        height:336px;
+        width:380px;
+    }
+    .main .education .item:hover>.item-more{
+        color:#0078ff;
+        border:1px solid #0078ff;
+    }
+    .main .education .item .item-desc{
+        -webkit-line-clamp: 4;
+        height:91px;
+    }
+    .main .education .item-img{
+        height:80px;
+    }
+    .main .education .item-img img{
+        max-height:80px;
+    }
+    .banner{
+        background: url(../images/product-center/product-center-banner.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and ( max-width: 1200px ) and ( min-width: 960px ){
+
+    .main a{
+        margin-right:2%;
+    }
+    .main .education .item{
+        width:100%;
+        height:auto;
+    }
+    .main .education .item .item-more{
+        margin-top:8%;
+        margin-bottom: 8%;
+        line-height: 38px;
+    }
+    .main .education .item:hover .item-more{
+        color: #cfcfcf;
+        border: 1px solid #cfcfcf;
+    }
+    .main .education .item .item-desc{
+        -webkit-line-clamp: 5;
+        height: 115px;
+    }
+    .main .education .item-img{
+        height:60px;
+        margin: 20px auto;
+    }
+    .main .education .item-img img{
+        max-height:60px;
+    }
+    .main .education a:nth-child(13) .item-img img{
+        max-height:68px;
+    }
+    .banner{
+        background: url(../images/product-center/product-center-banner@2x.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}

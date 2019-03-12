@@ -1,0 +1,369 @@
+.banner{
+    background: url('../images/sale-service/banner-sale.png') no-repeat;
+    background-size: 100% 100%;
+}
+.tab ul li {
+    width: 24%;
+}
+ .common-block{
+    font-size: 0;
+    padding-top:80px;
+}
+
+ .common-block .item-block{
+    width:100%;
+}
+ .common-block .item {
+    position: relative;
+    width:380px;
+    height: 285px;
+    background: #fff;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom:15px;
+    border-radius: 5px;
+}
+ .common-block .item .item-img{
+     width:380px;
+ }
+ .common-block .item:hover >.item-cont .bottom-block .right{
+    color:#0078ff;
+    border:1px solid #0078ff;
+}
+ .common-block .item-block  a:nth-child(3n){
+    margin-right:0;
+}
+ .common-block .item .item-cont{
+    position: absolute;
+    top:20px;
+    left:15px;
+    width:350px;
+}
+ .common-block .item .item-cont .item-title{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:50px;
+}
+ .common-block .item .item-cont .item-desc{
+    font-size: 18px;
+    margin-top:15px;
+    color: #fff;
+}
+ .common-block .item .item-cont .bottom-block{
+    margin-top:208px;
+}
+ .common-block .item .item-cont .bottom-block .left{
+    float: left;
+}
+ .common-block .item .item-cont .bottom-block .left .title{
+    font-size: 18px;
+    color:#2e3d50;
+    width:310px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+ .common-block .item .item-cont .bottom-block .left .title-eng{
+    font-size: 14px;
+    color:#ccc;
+    width:300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+ .common-block .item .item-cont .bottom-block .right{
+    float: right;
+    width:35px;
+    height:35px;
+    border: 1px solid #cccccc;/*0e7fff*/
+    border-radius: 50%;
+    font-size: 25px;
+    color:#ccc;
+    text-align: center;
+    line-height: 30px;
+    margin-top:5px;
+}
+ .common-block .item .item-cont .bottom-block-add{
+    margin-top: 170px;
+}
+ .common-block .item .item-cont .bottom-block-add1{
+    /*margin-top: 208px;*/
+}
+ .common-block .item .self-img{
+     width:380px;
+     height: 214px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+/*搜索*/
+ .common-block .search-block{
+    margin:20px 0;
+    position: relative;
+}
+ .common-block .search-block .search-lable, .common-block .search-block .search-input{
+     display: inline-block;
+ }
+ .common-block .search-block .search-lable{
+    font-size: 14px;
+    color: #333;
+}
+.common-block .search-block .search-input {
+    position: relative;
+    cursor: pointer;
+}
+.common-block .search-block .search-input input{
+    width:315px;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    padding-left:15px;
+    padding-right: 30px;
+}
+.common-block .search-block .search-input input:focus,
+.common-block .search-block .search-content .search-content-input input:focus{
+    outline: none;
+    border-color:#0078ff;
+    caret-color:#0078ff;
+}
+.common-block .search-block .search-input .search-icon{
+    position: absolute;
+    top:0;
+    right:0;
+    color: #999;
+    font-weight: bold;
+    line-height: 40px;
+    padding-right: 10px;
+    /*width:40px;
+    height: 24px;*/
+}
+.common-block .search-block .search-content{
+    position: absolute;
+    top:44px;
+    left:42px;
+    width:580px;
+    height:270px;
+    background: #fff;
+    color:#000;
+    z-index: 999;
+    border:1px solid #e4e4e4;
+    border-radius: 3px;
+    padding:10px 0 10px 15px;
+    display: none;
+}
+.common-block .search-block .search-content .search-content-input{
+    padding-bottom:10px;
+    border-bottom: 1px solid #e4e4e4;
+    /*width:285px;*/
+    position: relative;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.common-block .search-block .search-content .search-content-input input{
+    width:285px;
+    height:25px;
+     border: 1px solid #ccc;
+     border-radius: 3px;
+     padding-left:10px;
+     padding-right: 23px;
+}
+
+.common-block .search-block .search-content .search-content-input .search-icon{
+    width:23px;
+    height:23px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    top:1px;
+    right: 47%;
+    background: #f0f0f0;
+    margin-right: 4px;
+   
+}
+.common-block .search-block .search-content .search-content-input .search-icon p{
+    text-align: center;
+    color: #999;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+}
+.common-block .search-block .search-content .search-content-items{
+    width: 99%;
+    height:200px;
+    overflow-y: scroll;
+    margin-right: 5px;
+}   
+/*滚动条样式*/
+.common-block .search-block .search-content .search-content-items::-webkit-scrollbar
+ {/*滚动条整体样式*/
+    width: 5px;     /*高宽分别对应横竖滚动条的尺寸*/
+}
+.common-block .search-block .search-content .search-content-items::-webkit-scrollbar-thumb
+{/*滚动条里面小方块*/
+    border-radius: 5px;
+    /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+    background: #e6e7e8;
+}
+.common-block .search-block .search-content .search-content-items::-webkit-scrollbar-track
+ {/*滚动条里面轨道*/
+    border-radius: 0;
+    background: #fff;
+}
+.common-block .search-block .search-content .search-content-items ul li{
+    float: left;
+    width:25%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #666;
+    line-height: 40px;
+}
+.common-block .search-block .search-content .search-content-items ul li span{
+    padding:5px 8px;
+}
+
+.main a{
+    width: 380px;
+    margin-right: 20px;
+}
+.common-block .search-block .search-content .search-content-input input::-ms-clear,
+.common-block .search-block .search-input input::-ms-clear{
+  width : 0;
+  height: 0;
+  display: none;
+}
+.common-block .pad-block{
+    display: none;
+}
+
+@media screen and ( min-width: 1201px ) {
+    .common-block .search-block .search-content .search-content-items ul li span:hover{
+        color:#4899f4;
+        padding:5px 8px;
+        background: #eef6ff;
+        border-radius: 3px;
+        cursor: default;
+    }
+}
+@media screen and ( max-width: 1200px ) and ( min-width: 960px ){
+    .banner {
+        background: url(../images/sale-service/banner-sale@2x.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .common-block .item{
+        width:100%;
+        height:auto;
+        margin-right: 0;
+        margin-bottom: 7%;
+    }
+    .main a{
+        width:32%;
+        margin-right: 2%;
+    }
+    .common-block .item-block a:nth-child(3n){
+        margin-right: 0;
+    }
+    .common-block .item .item-cont{
+        width:100%;
+        left: 0;
+        padding:0 5%;
+        top:77%;
+    }
+    .common-block .item .self-img{
+        width:100%;
+        height:auto;
+        padding-bottom:20%;
+    }
+    .common-block .item .item-cont .bottom-block{
+        margin-top:0;
+    }
+
+    .common-block .item .item-cont .bottom-block .left{
+        width:84%;
+    }
+    .common-block .item .item-cont .bottom-block .left .title{
+        width: 100%;
+        white-space: normal;
+    }
+
+    .common-block .search-block{
+        /*display: none;*/
+        width: 32%;
+        margin: 20px auto;
+    }
+    .common-block .search-block .search-lable{
+        display: none;
+    }
+    .common-block .search-block .search-input,.common-block .search-block .search-input input{
+        width:100%;
+    }
+    .common-block .search-block .search-content .search-content-input{
+        margin-right: 0;
+        padding-bottom:0;
+        margin-left: 12px;
+    }
+    .common-block .search-block .search-content .search-content-input input{
+        height:45px;
+        width:100%;
+        border: none;
+        
+    }
+    .common-block .search-block .search-input input{
+        /*border-bottom: none;*/
+        height:45px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-color: #ddd;
+    }
+    .common-block .search-block .search-content .search-content-input .search-icon{
+        background: url('../images/sale-service/search.png') center no-repeat;
+        background-size: 16px 16px;
+        width: 16px;
+        height: 45px;
+        cursor: pointer;
+        position: absolute;
+        top:0px;
+        right: 0px;
+        padding:20px;
+    }
+    .common-block .search-block .search-content .search-content-input .search-icon p{
+        display: none;
+    }
+    .common-block .search-block .search-content{
+        left:0;
+        top:45px;
+        width:100%;
+        height: 316px;
+        padding: 0;
+        border-top: none;
+        z-index: 1;
+        border-bottom-left-radius:3px;
+        border-bottom-right-radius:3px;
+    }
+    .common-block .search-block .search-content .search-content-items ul li{
+        float: none;
+        width: 95%;
+        margin-left: 12px;
+        border-bottom: 1px solid #dddddd;
+        height:45px;
+         line-height: 45px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .common-block .search-block .search-content .search-content-items{
+        height:268px;
+
+        width:100%;
+        margin-right: 0;
+    }
+    .common-block .search-block .search-content .search-content-items ul{
+        background: #fff;
+    }
+    .common-block .search-block .search-content .search-content-items li:last-child{
+        border-bottom: none;
+    }
+
+}
