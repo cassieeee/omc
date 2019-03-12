@@ -1,5 +1,4 @@
-﻿a{font-size:1px}
-/***********************reset***********************/
+﻿/***********************reset***********************/
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -22,7 +21,6 @@ html {
     -ms-text-size-adjust: auto;
     -webkit-text-size-adjust: auto;
     height: 100%;
-    /*font-size: 12px;    */
 }
 
 body {
