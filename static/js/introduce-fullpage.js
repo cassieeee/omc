@@ -183,9 +183,9 @@ theImage.onload =function(){
 }
    
 
-console.log($('.bx-wrapper .bx-pager.bx-default-pager a'));
+console.log($('.bx-wrapper .bx-pager .bx-default-pager a'));
     
-$('.bx-wrapper .bx-pager.bx-default-pager a').eq(0).addClass('active11');
+$('.bx-wrapper .bx-pager .bx-default-pager a').eq(0).addClass('active11');
 
 
 

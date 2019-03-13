@@ -82,6 +82,15 @@ var data = {
         }
     ],
     'company':[
+        
+        {
+            'links':'http://omc.101.com/product/17.shtml#section-solution',
+            'image':'/html/static/images/solution/wuyeguanli.png',
+            'title':'中国物业管理行业移动互联网教育培训',
+            'desc':'将沉浸式虚拟现实技术（VR）与科普教育资源相融合，以优质资源为核心，集终端、应用系统、平台、内容于一体，为学生创设接近真实的科普教育环境，为学习者打造高度开放、可交互、沉浸式的三维体验环境，培养体验者的实践动手创新能力，同时拓宽科普知识范畴，提升全面科学素质。'
+        }
+    ],
+    'entertainment':[
         {
             'links':'http://omc.101.com/product/5.shtml#section-solution',
             'image':'/html/static/images/solution/huanxiang.png',
@@ -93,12 +102,6 @@ var data = {
             'image':'/html/static/images/solution/vrhaiyang.png',
             'title':'101VR海洋探宝科技馆',
             'desc':'海底寻宝虚拟现实科技馆，充分利用虚拟现实技术与体感交互技术，提高知识传播趣味性、互动性，提升参与者兴趣，拓宽科普知识范畴，打造以“模拟深海科考，亲身沉船寻宝“为主题的虚拟互动展厅。'
-        },
-        {
-            'links':'http://omc.101.com/product/17.shtml#section-solution',
-            'image':'/html/static/images/solution/wuyeguanli.png',
-            'title':'中国物业管理行业移动互联网教育培训',
-            'desc':'将沉浸式虚拟现实技术（VR）与科普教育资源相融合，以优质资源为核心，集终端、应用系统、平台、内容于一体，为学生创设接近真实的科普教育环境，为学习者打造高度开放、可交互、沉浸式的三维体验环境，培养体验者的实践动手创新能力，同时拓宽科普知识范畴，提升全面科学素质。'
         }
     ],
     'sea':[

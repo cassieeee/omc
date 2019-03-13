@@ -15,6 +15,7 @@ $(function () {
     initdata('education');
     initdata('government');
     initdata('company');
+    initdata('entertainment');
     initdata('sea');
 
     //pad两倍图替换

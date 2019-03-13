@@ -3,6 +3,12 @@
     overflow: hidden;
     background: #f9f9f9;
 }
+.self-main>div:nth-child(even){
+    background: #f9f9f9;
+}
+.self-main>div:nth-child(odd){
+    background: #fff;
+}
 .banner{
     background: url(../images/product-detail/banner.png) no-repeat;
     background-size: 100% 100%;
@@ -613,7 +619,7 @@ div:focus{outline:none}
     margin-top:10px;
     position: relative;
     opacity: 0;
-    text-align: left;
+    text-align: center;
     transition:opacity .3s;
     -webkit-transition:opacity .3s;
     -ms-transition:opacity .3s;
@@ -633,17 +639,8 @@ div:focus{outline:none}
 .download  .ewm-item .item-desc{
     font-size: 14px;
     line-height: 24px;
-    width: 50%;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    margin-left:90px;
     word-break: break-all;
+    margin-left: 10px;
 }
 .download  .ewm-item .item-desc.text{
     width:100%;

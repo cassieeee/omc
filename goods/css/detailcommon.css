@@ -38,7 +38,7 @@
     width: 1180px;
     margin: 40px auto 0;
     font-size: 0;
-    height: 450px;
+    height: auto;
 
 }
 .common-scenario .tab-content .content-item{
