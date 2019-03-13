@@ -919,7 +919,6 @@
 				if (v.anchorLink == 'page4'){ //当滚屏到最后一屏时间 
 		　　　　　　footer_a = $('.company').height();//倒数第二屏的高度  
 		　　　　　　footer_h = $('.content').height()+70;  //footer的高度
-		console.log(v.dtop , footer_a , footer_h);
 		　　　　　　 var translate3d = 'translateY(-' + (v.dtop - footer_a + footer_h) + 'px)';  
 		　　　　 }else{  
 		　　　　　　var translate3d = 'translateY(-' + v.dtop+'px)';  
