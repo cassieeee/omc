@@ -2,6 +2,12 @@
     width:100%;
     overflow: hidden;
 }
+.main>div:nth-child(even){
+    background: #f9f9f9;
+}
+.main>div:nth-child(odd){
+    background: #fff;
+}
 .banner{
     background: url(../images/solution-detail/banner.png) no-repeat;
     background-size: 100% 100%;
