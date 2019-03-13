@@ -4,6 +4,12 @@
     background: #f9f9f9;
     margin-bottom: 30px;
 }
+.self-main>div:nth-child(even){
+    background: #f9f9f9;
+}
+.self-main>div:nth-child(odd){
+    background: #fff;
+}
 .banner{
     background: url(../images/product-detail/banner.png) no-repeat;
     background-size: 100% 100%;

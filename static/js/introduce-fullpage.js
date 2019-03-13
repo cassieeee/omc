@@ -191,9 +191,8 @@ theImage.onload =function(){
 
 
 
-
-
-
+// console.log($('.right-block .item').eq(0));
+// $('.right-block .item').eq(0).click;
     var dongmanchengSlider = $('#bottom-dongmancheng-banner').bxSlider({
         auto: true,
         infiniteLoop: true,
@@ -201,25 +200,22 @@ theImage.onload =function(){
         fullPage: true,
     });
 
-    var xiaozhenSlider;
+    var xiaozhenSlider,dongmanchengSlider;
     // 创意基地右边tab
     $('.right-block .item').click(function () {
         if ($(this).index() == 0) {
             $('.bx-wrapper').hide();
-            // console.log($('.slider7').parent().parent());
-            $('#bottom-dongmancheng-banner').parent().parent().show();
+            $('#bottom-dongmancheng-banner').show();
+            // $('#bottom-dongmancheng-banner').parent().parent().show();
+           
             dongmanchengSlider && dongmanchengSlider.destroySlider();
             dongmanchengSlider = $('#bottom-dongmancheng-banner').bxSlider({
-                // slideWidth: 600,
                 fullPage: true,
                 auto: true,
                 pause: 5000,
                 infiniteLoop: true,
             });
 
-            //滚动 动漫城显示
-            $('#bottom-dongmancheng-banner').removeClass('hide');
-            $('#bottom-xiaozhen-banner').addClass('hide');
             //处理当前点击item的状态
             $(this).find('.normal').hide();
             $(this).find('.hover').show();
@@ -231,22 +227,17 @@ theImage.onload =function(){
         } else {
             $('.bx-wrapper').hide();
             $('#bottom-xiaozhen-banner').show();
-            // console.log($('.slider77').parent().parent());
-            $('#bottom-xiaozhen-banner').parent().parent().show();
+            // $('#bottom-xiaozhen-banner').parent().parent().show();
 
             xiaozhenSlider && xiaozhenSlider.destroySlider();
             xiaozhenSlider = $('#bottom-xiaozhen-banner').bxSlider({
-                // slideWidth: 600,
                 fullPage: true,
                 auto: true,
                 pause: 5000,
                 infiniteLoop: true,
-                // minSlides: 1,
             });
 
-            //滚动 小镇显示
-            $('#bottom-dongmancheng-banner').addClass('hide');
-            $('#bottom-xiaozhen-banner').removeClass('hide');
+            
             //处理当前点击item的状态
             $(this).find('.normal').hide();
             $(this).find('.hover').show();
