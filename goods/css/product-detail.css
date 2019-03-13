@@ -2,6 +2,7 @@
     width:100%;
     overflow: hidden;
     background: #f9f9f9;
+    margin-bottom: 30px;
 }
 .banner{
     background: url(../images/product-detail/banner.png) no-repeat;
@@ -468,7 +469,7 @@ div:focus{outline:none}
 .download{
     padding-top:80px;
     padding-bottom: 60px;
-    width:1180px;
+    min-width:1180px;
     margin: 0 auto;
 }
 .download .title{
@@ -501,6 +502,7 @@ div:focus{outline:none}
     border-radius: 10px;
     position: relative;
     text-align: center;
+    padding: 0 70px;
 }
 .download .down-block .down-item:nth-child(1){
     cursor: pointer;
@@ -510,6 +512,7 @@ div:focus{outline:none}
 }
 .download .down-block .down-item div{
     display: inline-block;
+    vertical-align: middle;
 }
 .download .down-block .down-item .item-img{
     vertical-align: middle;
@@ -518,25 +521,23 @@ div:focus{outline:none}
     height:34px;
     width:30px;
     background: url('../images/product-detail/pc-icon.png') no-repeat;
-    margin-top:-5px;
 }
 .download .down-block .down-item .ios-icon{
     height:34px;
     width:30px;
     background: url('../images/product-detail/ios-icon.png') no-repeat;
-    margin-top:-5px;
 }
 .download .down-block .down-item .android-icon{
     height:34px;
     width:28px;
     background: url('../images/product-detail/android-icon.png') no-repeat;
-    margin-top:-5px;
 }
 .download .down-block .down-item  .item-title{
-    margin:0 20px;
+    margin:0 10px;
     font-size: 20px;
     font-weight: bold;
     color:#6c737e;
+    line-height: 80px;
 }
 
 .download .down-block .down-item .item-down{
@@ -603,8 +604,9 @@ div:focus{outline:none}
     height: 200px;
 }
 .download  .ewm-item{
-    width:95%;
+    min-width: 365px;
     min-height: 200px;
+    line-height: 200px;
     margin-right:18px;
     display: inline-block;
     box-shadow: 0 0 8px #f4f3f3;
@@ -818,6 +820,7 @@ div:focus{outline:none}
 .download .down-block .down-item .item-content{
     width:100%;
     margin: 0 auto;
+    white-space: nowrap;
 }
 
 @media screen and ( min-width: 1201px ){
