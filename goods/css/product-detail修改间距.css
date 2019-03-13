@@ -262,7 +262,7 @@
     text-align: center;
     width:40px;
     height:40px;
-    line-height: 30px;
+    line-height: 33px;
     color:#00b3ff;
     border-radius: 50%;
     border:1px solid #00b3ff;
@@ -468,7 +468,7 @@ div:focus{outline:none}
 .download{
     padding-top:80px;
     padding-bottom: 60px;
-    width:1180px;
+    min-width:1180px;
     margin: 0 auto;
 }
 .download .title{
@@ -491,7 +491,7 @@ div:focus{outline:none}
     opacity: 1;
 }
 .download .down-block .down-item{
-    width:365px;
+    min-width:365px;
     margin-right:18px;
     display: inline-block;
     box-shadow: 0 8px 8px #f4f3f3;
@@ -501,6 +501,7 @@ div:focus{outline:none}
     border-radius: 10px;
     position: relative;
     text-align: center;
+    padding: 0 70px;
 }
 .download .down-block .down-item:nth-child(1){
     cursor: pointer;
@@ -510,6 +511,7 @@ div:focus{outline:none}
 }
 .download .down-block .down-item div{
     display: inline-block;
+    vertical-align: middle;
 }
 .download .down-block .down-item .item-img{
     vertical-align: middle;
@@ -530,20 +532,19 @@ div:focus{outline:none}
     height:34px;
     width:28px;
     background: url('../images/product-detail/android-icon.png') no-repeat;
-    margin-top:-5px;
 }
 .download .down-block .down-item  .item-title{
-    margin:0 20px;
+    margin:0 10px;
     font-size: 20px;
     font-weight: bold;
     color:#6c737e;
+    line-height: 80px;
 }
 
 .download .down-block .down-item .item-down{
     background: url('../images/product-detail/download-icon.png') no-repeat;
     width:28px;
     height:28px;
-    vertical-align: middle;
 }
 .download .down-block .down-item .item-ewm{
     position: absolute;
@@ -603,8 +604,9 @@ div:focus{outline:none}
     height: 200px;
 }
 .download  .ewm-item{
-    width:95%;
+    min-width: 365px;
     min-height: 200px;
+    line-height: 200px;
     margin-right:18px;
     display: inline-block;
     box-shadow: 0 0 8px #f4f3f3;
@@ -816,3 +818,6 @@ div:focus{outline:none}
     box-shadow: 0 3px 3px #cadfff;
 }
 
+.download .down-block .down-item .item-content{
+    white-space: nowrap;
+}

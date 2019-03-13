@@ -3,6 +3,7 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 80px;
+    background: #fff;
     
 }
 .common-scenario .scenario-tab{
@@ -37,7 +38,8 @@
     width: 1180px;
     margin: 40px auto 0;
     font-size: 0;
-    height: 400px;
+    height: 450px;
+
 }
 .common-scenario .tab-content .content-item{
     position: relative;
