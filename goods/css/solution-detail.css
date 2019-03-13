@@ -306,7 +306,9 @@
     background-color: #0066ff;
     box-shadow: 0 5px 5px #cadfff;
 }
-
+    .ad{
+        margin: 0 auto;
+    }
 @media screen and ( max-width: 1200px ) and ( min-width: 960px ) {
     .main{
         padding:0;
@@ -367,7 +369,7 @@
         font-size:16px;
     }
     .case-swiper-block{
-        width:100%;
+        width:80%;
     }
     .bx-wrapper .bx-viewport{
         margin:0 auto;
