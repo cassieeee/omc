@@ -161,11 +161,11 @@ i, em {
     line-height: 30px;
     width: 560px;
     margin-top:30px;
-    display: -webkit-box;
+    /*display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;*/
 }
 .banner .desc-eng{
     font-size: 40px;
