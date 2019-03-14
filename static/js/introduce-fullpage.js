@@ -206,7 +206,6 @@ theImage.onload =function(){
         if ($(this).index() == 0) {
             $('.bx-wrapper').hide();
             $('#bottom-dongmancheng-banner').show();
-            // $('#bottom-dongmancheng-banner').parent().parent().show();
            
             dongmanchengSlider && dongmanchengSlider.destroySlider();
             dongmanchengSlider = $('#bottom-dongmancheng-banner').bxSlider({
@@ -227,7 +226,6 @@ theImage.onload =function(){
         } else {
             $('.bx-wrapper').hide();
             $('#bottom-xiaozhen-banner').show();
-            // $('#bottom-xiaozhen-banner').parent().parent().show();
 
             xiaozhenSlider && xiaozhenSlider.destroySlider();
             xiaozhenSlider = $('#bottom-xiaozhen-banner').bxSlider({
