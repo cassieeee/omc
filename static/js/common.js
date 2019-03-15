@@ -93,16 +93,14 @@ function replaceImgToOne(selector){
 }
 var listttt=false;
 function resizeFunc(width) {
-    screenWidth = width;
-    console.log(screenWidth);
-    if(screenWidth<=1200){
-        replaceImgToDouble(".main-wrapper img[retina]");
-        // listttt && company(true);
-    }else{
-        replaceImgToOne('.main-wrapper img[retina]');
-        // listttt && company(false);
+    console.log(screenWidth,width)
+    if(screenWidth<1200 && width >= 1200 || (screenWidth == width && screenWidth >= 1200)){
+         replaceImgToOne('.main-wrapper img[retina]');
     }
-
+    if(screenWidth >= 1200 && width < 1200 || (screenWidth == width && screenWidth < 1200)){
+        replaceImgToDouble(".main-wrapper img[retina]");
+    }
+    screenWidth = width;
 }
 
 
