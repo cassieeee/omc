@@ -50,10 +50,10 @@ var data = {
         },
         
         {
-            'links':'http://omc.101.com/product/40.shtml',
-            'image':'/html/static/images/product-center/xianggang.png',
-            'title':'香港校园通',
-            'desc':'香港校园通是尖端的香港中小学移动资讯化综合服务平台， 集学习、交流、分享、管理于一体，并实现跨终端应用。'
+            'links':'http://omc.101.com/goods/product/56',
+            'image':'/html/static/images/product-center/ptjy.png',
+            'title':'领导力培训解决方案',
+            'desc':'福建省教育信息化领导力高级培训通过信息化培训现状与需求进行长期跟踪和系统研究，全面深入推进教育信息化深化应用，融合创新。'
         },
         {
             'links':'http://omc.101.com/goods/product/34',
@@ -76,10 +76,10 @@ var data = {
     ],
     'office':[
         {
-            'links':'http://omc.101.com/product/18.shtml',
-            'image':'/html/static/images/product-center/99u.png',
-            'title':'99助手',
-            'desc':'99助手是目前市面上唯一一款全互联网模式的移动办公学习平台，将教育培训（e-Learning）与社交、游戏化办公协同、e-HR、CRM等业务...'
+            'links':'http://omc.101.com/goods/product/57',
+            'image':'/html/static/images/product-center/nvxingzhisheng.png',
+            'title':'女性之声',
+            'desc':'全国妇联官方认证的女性社交学习服务平台。专为中国女性和家庭打造，以“反映女性心声、回应女性诉求、维护女性权益、服务女性发展”为目标。'
         },
         {
             'links':'http://omc.101.com/goods/product/37',
@@ -92,13 +92,7 @@ var data = {
             'image':'/html/static/images/product-center/women.png',
             'title':'妇联通',
             'desc':'专为妇联组织专兼职干部提供一个学习、通讯协作的云办公平台，帮助妇联组织变得更加优秀，沟通更加便捷。'
-        },
-        {
-            'links':'http://omc.101.com/goods/product/57',
-            'image':'/html/static/images/product-center/nvxingzhisheng.png',
-            'title':'女性之声',
-            'desc':'全国妇联官方认证的女性社交学习服务平台。专为中国女性和家庭打造，以“反映女性心声、回应女性诉求、维护女性权益、服务女性发展”为目标。'
-        }
+        }        
     ],
     'social':[
         {
