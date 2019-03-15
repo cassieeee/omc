@@ -340,6 +340,13 @@
     .material .item-block .self-item img{
         height:100%;
     }
+    .material .item-block .self-item img{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
     .vr .content .desc-block .desc-img img{
         width:50%;
     }

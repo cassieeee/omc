@@ -255,16 +255,14 @@ div:focus{outline:none}
     line-height: 17px;
     margin:0 25px 35px;
     min-height: 35px;
-    display: -webkit-box;
-    display: -ms-box;
-    -ms-box-orient: vertical;
-    -ms-line-clamp: 2;
+    /*display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     word-break:break-all;   
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 35px;
+    height: 35px;*/
+    /*white-space: normal;*/
 }
 
 

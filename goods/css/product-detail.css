@@ -2,7 +2,7 @@
     width:100%;
     overflow: hidden;
     background: #f9f9f9;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .self-main>div:nth-child(even){
     background: #f9f9f9;
@@ -23,6 +23,7 @@
 }
 .banner h1 p{
     display: inline-block;
+    margin-left: 20px;
 }
 .banner .btn{
     margin-top:40px;
@@ -229,7 +230,6 @@
 .ad{
     margin:0;
 }
-
 .common-scenario .tab-content .content-item .item-desc{
     position: relative;
 }
@@ -270,7 +270,7 @@
     text-align: center;
     width:40px;
     height:40px;
-    line-height: 30px;
+    line-height: 33px;
     color:#00b3ff;
     border-radius: 50%;
     border:1px solid #00b3ff;
@@ -285,6 +285,7 @@
 .case-swiper-block,.honor-swiper-block{
     position: relative;
     width:100%;
+    /*height:350px;*/
     margin: 0 auto;
     text-align: center;
     color:#6c737e;
@@ -434,7 +435,7 @@ div:focus{outline:none}
 }
 .honor .achievement img{
     width:100%;
-    height:650px;
+    height:460px;
 }
 .honor .achievement .content{
     position: absolute;
@@ -449,15 +450,15 @@ div:focus{outline:none}
     /*margin-left:-160px;*/
 }
 .honor .achievement .content .content-item{
-    margin-top:30px;
+    margin-top:20px;
 }
 .honor .achievement .content .content-item .item-title{
-    font-size: 60px;
+    font-size: 45px;
     letter-spacing: 10px;
 }
 .honor .achievement .content .content-item .item-title span{
     color: #fecc02;
-    font-size: 100px;
+    font-size: 70px;
 }
 .honor .achievement .content .content-item .item-desc{
     width: 780px;
@@ -498,7 +499,7 @@ div:focus{outline:none}
     opacity: 1;
 }
 .download .down-block .down-item{
-    width:365px;
+    min-width:365px;
     margin-right:18px;
     display: inline-block;
     box-shadow: 0 8px 8px #f4f3f3;
@@ -550,7 +551,6 @@ div:focus{outline:none}
     background: url('../images/product-detail/download-icon.png') no-repeat;
     width:28px;
     height:28px;
-    vertical-align: middle;
 }
 .download .down-block .down-item .item-ewm{
     position: absolute;
@@ -640,6 +640,7 @@ div:focus{outline:none}
     font-size: 14px;
     line-height: 24px;
     word-break: break-all;
+    margin-left: 10px;
 }
 .download  .ewm-item .item-desc.text{
     width:100%;
@@ -721,7 +722,7 @@ div:focus{outline:none}
 
 .case-swiper-block {
     max-height: 380px;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .honor-swiper-block {
@@ -943,180 +944,5 @@ div:focus{outline:none}
         background-position: center;
         background-color: #0066ff;
         box-shadow: 0 3px 3px #cadfff;
-    }
-
-    .bx-wrapper .bx-next:hover {
-        border:none;
-        background-image:url('../images/solution-detail/next-icon-hover.png');
-        background-size: 90% 100%;
-        background-position: center;
-        background-color: #0066ff;
-        box-shadow: 0 3px 3px #cadfff;
-    }
-    .bx-wrapper .bx-viewport{
-        margin:0 auto;
-    }
-    .case-swiper .swiper-slide .item-img{
-        height:auto;
-    }
-    .case-swiper .swiper-slide .item-img img{
-        max-height: 170px;
-    }
-    .case-swiper .swiper-slide .item-title{
-        width:100%;
-    }
-    .swiper-slide{
-        height: auto;
-    }
-
-
-    .comment{
-        width:100%;
-        padding:80px 7%;
-    }
-    .comment .item-block{
-        width:100%;
-    }
-    .comment .item-block .self-item{
-        width:100%;
-    }
-    .comment .item-block .self-item .item-img{
-        width:15%;
-    }
-    .comment .item-block .self-item .item-img img{
-        width:100px;
-    }
-    .comment .item-block .self-item .item-content{
-        width:85%;
-    }
-    .honor-swiper .swiper-slide .item-img{
-
-        min-height:190px;
-        height: auto;
-    }
-    .honor .achievement img{
-        height: 420px;
-    }
-    .honor .achievement .content .content-item .item-title span{
-        font-size:65px;
-    }
-    .honor .achievement .content .content-item .item-title{
-        font-size:40px;
-    }
-    .honor .achievement .content .content-item .item-desc{
-        font-size:15px;
-    }
-    .honor .achievement .content .content-item {
-        margin-top: 2%;
-    }
-    .honor .achievement .content{
-        left:57%;
-    }
-    .download{
-        width:100%;
-    }
-    .download .down-block .down-item-block{
-        width:100%;
-              height:auto;
-        margin-bottom:1%;
-    }
-    .download .down-block .down-item {
-        width: 32%;
-        margin: 0 auto;
-        display: block;
-        border:1px solid #eeeeee;
-    }
-    .download .ewm-item {
-        width: 32%;
-        margin: 10px auto 0;
-        position: relative;
-        display: none;
-        opacity: 1;
-
-    }
-    .download .down-block .down-item .item-title {
-        margin: 0 3%;
-    }
-    .download .down-block .down-item .item-ewm{
-        width:16%;
-        margin-left: 0;
-    }
-    
-
-    .download .down-block .down-item .item-img{
-        /*width:10%;*/
-    }
-   
-    .download .down-block .down-item .item-down{
-        /*width:18%;*/
-    }
-    .download .down-block .down-item .pc-icon{
-        background: url(../images/product-detail/pc-icon@2x.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    .download .down-block .down-item .ios-icon{
-         background: url(../images/product-detail/ios_icon@2x.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    .download .down-block .down-item .android-icon{
-         background: url(../images/product-detail/android-icon@2x.png) no-repeat;
-        background-size: 100% 100%;
-    }
-    .download .down-block .down-item .item-down{
-         background: url(../images/product-detail/download-icon@2x.png) no-repeat left/28px 28px;
-    }
-    .download .down-block .down-item .item-ewm{
-         background: url(../images/product-detail/ewm-icon@2x.png) no-repeat center/28px 28px;
-    }
-
-     .download .down-block .active .item-title{
-        color:#0179ff;
-    }
-    .download .down-block .active .pc-icon,.download .down-block .down-item:hover .pc-icon{
-        background: url('../images/product-detail/pc-icon-hover@2x.png') no-repeat ;
-         background-size: 100% 100%;
-    }
-   .download .down-block .active .ios-icon,.download .down-block .down-item:hover .ios-icon{
-        background: url('../images/product-detail/ios-icon-hover@2x.png') no-repeat;
-         background-size: 100% 100%;
-    }
-    .download .down-block .active .android-icon,.download .down-block .down-item:hover .android-icon{
-        background: url('../images/product-detail/android-icon-hover@2x.png') no-repeat;
-         background-size: 100% 100%;
-    }
-    .download .down-block .active .item-down,.download .down-block .down-item:hover .item-down{
-        background: url('../images/product-detail/download-icon-hover@2x.png') no-repeat left/28px 28px;
-    }
-    .download .down-block .active .item-ewm,.download .down-block .down-item:hover .item-ewm{
-        background: linear-gradient(to right,rgb(242,248,255),rgb(255,255,255));
-        background: -webkit-linear-gradient(to right,rgb(242,248,255),rgb(255,255,255));
-    }
-    .down-item-block .down-item:hover .item-ewm{
-         background: url(../images/product-detail/ewm-icon-hover@2x.png) no-repeat center/28px 28px;
-    }
-    .down-item-block .down-item:hover .item-ewm:after,.download .down-block .active .item-ewm:after{
-        content: '';
-        position: absolute;
-        top:0;
-        right: 0;
-        background:url('../images/product-detail/ewm-icon-hover.png') center  no-repeat;
-        background-size: 28px 28px;
-        width: 100%;
-        height: 100%;
-    }
-    /*.case-swiper-block{
-        width:80%;
-    }*/
-    /*.bx-wrapper{
-        max-width: 80%;
-    }*/
-    .case-swiper-block, .honor-swiper-block{
-        width: 80%;
-    }
-    .bx-wrapper .bx-prev{
-        left: -9%;
-    }
-    .bx-wrapper .bx-next{
-        right:-9%;
     }
 }

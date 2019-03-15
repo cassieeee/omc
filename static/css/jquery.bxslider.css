@@ -69,7 +69,11 @@
 	display: block;
 	width: 0;
 	height: 4px;
-	
+	background: -moz-linear-gradient(left, #2e47ff, #9cf2fe);
+	background: -webkit-linear-gradient(left, #2e47ff, #9cf2fe);
+	background: -o-linear-gradient(left, #2e47ff, #9cf2fe);
+	filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#2e47ff',endColorStr='#9cf2fe',gradientType='1'); 
+
 }
 
 /*.bx-wrapper .bx-pager.bx-default-pager a:hover,*/
@@ -84,11 +88,6 @@
 	-ms-animation: catman 5s linear;
 	-moz-animation: catman 5s linear;
 	-o-animation: catman 5s linear;
-	/*transition:width 5s linear;
-	-ms-transition:width 5s linear;
-	-webkit-transition:width 5s linear;
-	-moz-transition:width 5s linear;
-	-o-transition:width 5s linear;*/
 }
 @-webkit-keyframes catman {
     0%{
@@ -124,17 +123,6 @@
     }
 }
 @-o-keyframes catman {
-    0%{
-        width: 0;
-    }
-    50%{
-         width:50px;
-    }
-    100%{
-         width: 95px;
-    }
-}
-@keyframes catman {
     0%{
         width: 0;
     }

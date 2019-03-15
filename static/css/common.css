@@ -117,12 +117,12 @@ ul, ol {
 i, em {
     font-style: normal;
 }
-
-
 /*************************banner和tab****************************/
 .banner{
     width: 100%;
     height:600px;
+    background: url('../images/product-center/product-center-banner.png') no-repeat;
+    background-size:100% 100%; 
     position: relative;
 }
 .banner .topdesc{
@@ -161,11 +161,11 @@ i, em {
     line-height: 30px;
     width: 560px;
     margin-top:30px;
-    display: -webkit-box;
+    /*display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis;*/
 }
 .banner .desc-eng{
     font-size: 40px;
@@ -174,7 +174,7 @@ i, em {
 }
 .tab{
     background: url('../images/common-tab-bg.png') repeat-y;
-    /*background-size:100% auto;*/
+    background-size:100% auto;
     height:60px;
     width:100%;
     text-align: center;
@@ -389,89 +389,4 @@ i, em {
 }
 .hide{
     display: none;
-}
-
-@media screen and ( max-width: 1200px ) and ( min-width: 960px ){
-    
-    .banner{
-        height: 0;
-        position: relative;
-        padding-top: 35%;
-    }
-    .banner .topdesc{
-        width: 55%;
-        position: absolute;
-        top: 11%;
-        left: 22%;
-    }
-    .banner h1{
-        font-size:32px;
-        padding-top:20%;
-    }
-    .banner .desc{
-        font-size: 16px;
-        margin-top:0px;
-    }
-    .banner .topdesc .bottom-line-block{
-        margin-top:15px;
-    }
-    .main{
-        width:100%;
-        padding:0 2%;
-        background: #f9f9f9;
-        /*text-align: center;*/
-    }
-    .main a{
-        width: 32%;
-        margin-right: 20px;
-    }
-    .main .education a:nth-child(3n+4){
-        margin-right:0;
-    }
-
-    .main .education .item:hover{
-        box-shadow: none;
-        background: #eee;
-        transform: none;
-    }
-    .main  .item:hover .item-more{
-        color: #cfcfcf;
-        border: 1px solid #cfcfcf;
-    }
-    .ad img{
-        height: auto;
-    }
-    .ad .ad-content .content-desc{
-        font-size:30px;
-    }
-    .ad .ad-content .content-btn{
-        height:45px;
-        margin-top: 2%;
-        width: 24%;
-    }
-    .ad .ad-content{
-        top:20%;
-    }
-    .tab{
-        height:40px;
-    }
-    .tab ul {
-        width: 100%;
-    }
-    .tab ul li{
-        line-height:40px;
-        background: url('../images/tab-highlight.png') center 40px no-repeat;
-        background-size: 100% auto;
-        -ms-transition: background-position .2s;
-        -moz-transition: background-position .2s;
-        -webkit-transition: background-position .2s;
-        -o-transition: background-position .2s;
-        transition:background-position .2s;
-    }
-
-    .tab ul li:hover,.tab ul .on{
-        background: url('../images/tab-highlight.png') center no-repeat;
-        background-size: 100% 40px;
-    }
-
 }

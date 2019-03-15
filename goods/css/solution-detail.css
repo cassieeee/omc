@@ -37,6 +37,7 @@
 .components{
     padding-top:60px;
     padding-bottom: 30px;
+    background: #fff;
 }
 .components .components-tab ul{
     font-size: 0;
@@ -312,9 +313,15 @@
     background-color: #0066ff;
     box-shadow: 0 5px 5px #cadfff;
 }
-    .ad{
-        margin: 0 auto;
-    }
+.ad{
+    margin: 0 auto;
+}
+.common-scenario .tab-content{
+    margin-bottom: 0px;
+}
+.common-scenario .tab-content .content-item .item-desc{
+    padding-right: 20px;
+}
 @media screen and ( max-width: 1200px ) and ( min-width: 960px ) {
     .main{
         padding:0;
@@ -365,6 +372,12 @@
         width:100%;
         padding-left:4%;
         padding-right:4%;
+        padding-bottom: 50px;
+    }
+    .common-scenario .tab-content{
+        margin-bottom: 0px;
+        height: 350px;
+        width:99%;
     }
     .common-scenario .tab-content .content-item .item-img img{
         width:100%;

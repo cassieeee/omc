@@ -9,57 +9,41 @@ $(function () {
         $('#banner .swiper-slide').addClass('swiper-no-swiping');
     }
 
-//二倍图
-resizeFunc(screenWidth);
 
-// function goPAGE() {
-//     if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-//         /*window.location.href="你的手机版地址";*/
-//         // alert("mobile")
-//     }
-//     else {
-//         /*window.location.href="你的电脑版地址";    */
-//         // alert("pc")
-//     }
-// }
-// goPAGE();
+    //兼容ie10以下 第一页的动画
+    function initPageoneAnimt() {
+        // if (IEVersion()) {
+        //     $('.content h1').css('opacity', 1);
+        //     $('.banner .desc').css('opacity', 1);
+        //     $('.banner .btn').css('opacity', 1);
+        //     $('.banner img').css('opacity', 1)
+        // }
+    }
+    initPageoneAnimt();
 
-// $('.section').height(document.body.offsetHeight+'px');
-// alert(document.body.offsetHeight);
-   //下属公司
-var screenImage = $('.my-handle .subsidiary .right-block .item img');
-var theImage = new Image();
-var imgWidth = 0;//获取图片宽度
-var imgHeight = 0;//获取图片高度
-var multipleHeight=0,normalWidth;
-theImage.src = screenImage.attr("src");
-theImage.onload =function(){
-    // imgWidth = theImage.width;//获取图片宽度
-    // imgHeight = theImage.height;//获取图片高度
-    // if(imgHeight<document.body.offsetHeight){
-    //     multipleHeight =  (document.body.offsetHeight/2)/imgHeight;//高缩放的比例
-    // }else{
-    //     multipleHeight = document.body.offsetHeight/imgHeight;//高缩放的比例
-    // }
-    // normalWidth = imgWidth * multipleHeight;//缩放后的宽
-     normalWidth=$('.subsidiary .right-block .item').width();
-    
+    //第二屏适配屏幕的高度
+    var screenImage = $('.my-handle .subsidiary .right-block .item .item-normal img');
+    var theImage = new Image();
+    theImage.src = screenImage.attr("src");
+    var imageWidth = theImage.width;//获取图片宽度
+    var multiple = document.body.offsetHeight / 1080;//高缩放的比例
+    var normalWidth = imageWidth * multiple;//缩放后的宽
+    $('.my-handle .subsidiary .right-block .item').css('width', normalWidth + 'px');
 
+
+    //下属公司
     var index = 0;
-    var leftWidth = $('.subsidiary .left-block').width();
-    var rightWidth = document.body.clientWidth - leftWidth; //右侧可视宽度
+    var rightWidth = document.body.clientWidth - 326; //右侧可视宽度
     var sliderNum = $('#subsidiary .item').length;
-    var slideWidths =normalWidth * 7;//slide总的宽度
+    var slideWidths = normalWidth * 7;//slide总的宽度
     var subWidth = slideWidths - rightWidth;//宽度差
     var moveSlidenum = Math.ceil(subWidth / normalWidth);//可点击几次
     var subnum = rightWidth / normalWidth - Math.floor(rightWidth / normalWidth); //到最右端剩余的移动距离
-    // alert(document.body.clientWidth);
-    // alert(leftWidth);
+    // console.log(slideWidths,rightWidth,subWidth,moveSlidenum,sliderNum);
     function selectSlider(index) {
-       
         movewidths = index * normalWidth;
         if (index == moveSlidenum) {
-            movewidths = ((index - 1) * normalWidth + (1 - subnum) * normalWidth);
+            movewidths = (index - 1) * normalWidth + (1 - subnum) * normalWidth;
         }
         $('#subsidiary ').css('transform', 'translateX(-' + movewidths + 'px)');
         $('#subsidiary ').css('transition-duration', '.5s');
@@ -67,6 +51,7 @@ theImage.onload =function(){
     $('.tips-left').on('click', function (e) {
         e.preventDefault();
         index -= 1;
+        //  console.log(index);
         if (index < 0) {
             // index = sliderNum - 1;
             index = 0;
@@ -76,6 +61,8 @@ theImage.onload =function(){
         }
         selectSlider(index);
     });
+
+
     $('.tips-right').on('click', function (e) {
         e.preventDefault();
         index += 1;
@@ -96,11 +83,11 @@ theImage.onload =function(){
     //开始触摸函数，event为触摸对象
     function touchs(event){
         //阻止浏览器默认滚动事件
-        
+        event.preventDefault();
 
         //通过if语句判断event.type执行了哪个触摸事件
         if(event.type=="touchstart"){
-            console.log('开始');
+            // console.log('开始');
             //获取开始的位置数组的第一个触摸位置
             var touch = event.touches[0];
             //获取第一个坐标的X轴
@@ -135,7 +122,6 @@ theImage.onload =function(){
 
             //通过滑动的角度判断触摸的方向
             if(angle<45 && angle>=-45){
-                event.preventDefault();
                 index-=1;
                 if (index < 0) {
                     // index = sliderNum - 1;
@@ -150,7 +136,6 @@ theImage.onload =function(){
                 return false;
             }
             else if((angle<=180 && angle>=135) || (angle>=-180 && angle<-135 )){
-                event.preventDefault();
                 index+=1;
                 if (index > moveSlidenum) {
                     index = moveSlidenum;
@@ -161,12 +146,6 @@ theImage.onload =function(){
                 }
                 // alert('左滑动');
                 return false;
-            }else if(angle<135 && angle>=45){
-                // alert('下滑动');
-                // return false;
-            }else if(angle<=-45 && angle >=-135){
-                // alert('上滑动');
-                // return false;
             }
 
         }
@@ -178,21 +157,6 @@ theImage.onload =function(){
     subsidiary.addEventListener('touchend',touchs,false);
 
 
-
-
-}
-   
-
-
-    
-
-
-
-
-
-
-// console.log($('.right-block .item').eq(0));
-// $('.right-block .item').eq(0).click;
     var dongmanchengSlider = $('#bottom-dongmancheng-banner').bxSlider({
         auto: true,
         infiniteLoop: true,
@@ -206,7 +170,6 @@ theImage.onload =function(){
         if ($(this).index() == 0) {
             $('.bx-wrapper').hide();
             $('#bottom-dongmancheng-banner').show();
-           
             dongmanchengSlider && dongmanchengSlider.destroySlider();
             dongmanchengSlider = $('#bottom-dongmancheng-banner').bxSlider({
                 fullPage: true,
@@ -216,17 +179,15 @@ theImage.onload =function(){
             });
 
             //处理当前点击item的状态
-            $(this).find('.normal').hide();
             $(this).find('.hover').show();
-             $(this).next().find('.hover').hide();
+            $(this).find('.normal').hide();
             $(this).next().find('.normal').fadeIn('1000');
-           
+            $(this).next().find('.hover').fadeOut('1000');
 
 
         } else {
             $('.bx-wrapper').hide();
             $('#bottom-xiaozhen-banner').show();
-
             xiaozhenSlider && xiaozhenSlider.destroySlider();
             xiaozhenSlider = $('#bottom-xiaozhen-banner').bxSlider({
                 fullPage: true,
@@ -235,13 +196,11 @@ theImage.onload =function(){
                 infiniteLoop: true,
             });
 
-            
             //处理当前点击item的状态
-            $(this).find('.normal').hide();
             $(this).find('.hover').show();
-            $(this).prev().find('.hover').hide();
+            $(this).find('.normal').hide();
             $(this).prev().find('.normal').fadeIn('1000');
-            
+            $(this).prev().find('.hover').fadeOut('1000');
         }
 
     });
@@ -269,8 +228,9 @@ theImage.onload =function(){
     });
 
 
-    // var cheight = $(document.body).height();
-    // $('.section').height(cheight + 'px');
+    var cheight = $(document.body).height();
+    $('.section').height(cheight + 'px');
+
 
     //滚轮翻页
     var screen_height = $(window).height();
