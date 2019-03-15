@@ -1,49 +1,49 @@
 var data = {
     'education':[
         {
-            'links':'http://omc.101.com/product/1.shtml',
+            'links':'http://omc.101.com/goods/product/23',
             'image':'/html/static/images/product-center/101ppt.png',
             'title':'101教育PPT',
             'desc':'一款专业服务老师的备授课一体化教学软件，丰富教学资源、多元教学互动，辅助老师轻松备课、高效授课。'
         },
         {
-            'links':'http://omc.101.com/product/4.shtml',
+            'links':'http://omc.101.com/goods/product/29',
             'image':'/html/static/images/product-center/101cxsj.png',
             'title':'101创想世界',
             'desc':'101创想世界是网龙华渔教育拥有独立知识产权所开发的一款VR编辑软件，基于自主研发的VR引擎进行开发，依托云端海量3D颗粒素材，以所见即得的编辑交互形式，打造简单实用的VR内容编辑方式…'
         },
         {
-            'links':'http://omc.101.com/product/37.shtml',
+            'links':'http://omc.101.com/goods/product/27',
             'image':'/html/static/images/product-center/wangjiaotong.png',
             'title':'网教通',
             'desc':'网教通是为全球国家和地区提供全方位的教育信息化解决方案，打造国际顶级的教育资源和应用分发平台，构建移动互 联网终身学习生态圈。'
         },
         {
-            'links':'http://omc.101.com/product/19.shtml',
+            'links':'http://omc.101.com/goods/product/30',
             'image':'/html/static/images/product-center/101bk.png',
             'title':'101贝考',
             'desc':'101贝考(原91UP快学堂)为教师资格证、教师招聘、导游、公务员、事业单位、医师等多个考试领域提供全方位的备考服务。'
         },
         {
-            'links':'http://omc.101.com/product/17.shtml',
+            'links':'http://omc.101.com/goods/product/31',
             'image':'/html/static/images/product-center/jiaoyupingtai.png',
             'title':'中物教育平台',
             'desc':'中物教育是中国物业管理协会与网龙唐世网络公司共同搭建的面向物业管理行业从业人员的移动互联网教育平台，以“开放、分享、共赢"...'
         },
         {
-            'links':'http://omc.101.com/product/51.shtml',
+            'links':'http://omc.101.com/goods/product/32',
             'image':'/html/static/images/product-center/toolbook.png',
             'title':'人教系列学生数字工具书',
             'desc':'人教系列学生数字工具书是网龙华渔教育与人民教育电子音像出版社合作推出，为用户（主要是K12学生）提供的字、词专项学习产品。'
         },
         {
-            'links':'http://omc.101.com/product/6.shtml',
+            'links':'http://omc.101.com/goods/product/28',
             'image':'/html/static/images/product-center/haodangyuan.png',
             'title':'中国好党员',
             'desc':'专为组织部门提供的党员教育管理解决方案，旨在助力解决广泛性党员教育“开展难、管理难、展示难”的核心难题。'
         },
         {
-            'links':'http://omc.101.com/product/30.shtml',
+            'links':'http://omc.101.com/goods/product/33',
             'image':'/html/static/images/product-center/duoxue.png',
             'title':'多学',
             'desc':'多学是以学习资源为核心，采用开放平台模式，满足企业各种培训场景，集系统、资源及硬件为一体的综合解决方案提供商。为学习者创造..'
@@ -56,19 +56,19 @@ var data = {
             'desc':'香港校园通是尖端的香港中小学移动资讯化综合服务平台， 集学习、交流、分享、管理于一体，并实现跨终端应用。'
         },
         {
-            'links':'http://omc.101.com/product/21.shtml',
+            'links':'http://omc.101.com/goods/product/34',
             'image':'/html/static/images/product-center/fojiaotong.png',
             'title':'佛教通',
             'desc':'佛教通是一个包含信众修行APP服务、微信公众号、H5线上活动营销的智慧寺院解决方案。其通过与知名佛教寺院组织合作，打造B2B2C的佛教综合类服务平台。'
         },
         {
-            'links':'http://omc.101.com/product/20.shtml',
+            'links':'http://omc.101.com/goods/product/35',
             'image':'/html/static/images/product-center/gaoxiaotong.png',
             'title':'高校通',
             'desc':'主要应用于高校内部的沟通交流、组织协作和社交互动，能够有效地帮助学校、学生、教职工开展日常的交流和协作，提升学校信息公开、上传下达的...'
         },
         {
-            'links':'http://omc.101.com/product/34.shtml',
+            'links':'http://omc.101.com/goods/product/36',
             'image':'/html/static/images/product-center/zhongzhi.png',
             'title':'全国中职',
             'desc':'是以学习平台+教学资源+智慧教室的系统集成为核心的综合化教育云计算服务平台。为职业教育提供基于混合式教学、大数据分析决策、可持...'
@@ -82,27 +82,33 @@ var data = {
             'desc':'99助手是目前市面上唯一一款全互联网模式的移动办公学习平台，将教育培训（e-Learning）与社交、游戏化办公协同、e-HR、CRM等业务...'
         },
         {
-            'links':'http://omc.101.com/product/46.shtml',
+            'links':'http://omc.101.com/goods/product/37',
             'image':'/html/static/images/product-center/cloudoffice.png',
             'title':'云办公',
             'desc':'云办公是以大型政府组织、中小微企业组织为服务对象，高度定制化的智能移动办公与学习平台。聚焦组织管理服务领域，重点突出打造高度定...'
         },
         {
-            'links':'http://omc.101.com/product/44.shtml',
+            'links':'http://omc.101.com/goods/product/38',
             'image':'/html/static/images/product-center/women.png',
             'title':'妇联通',
             'desc':'专为妇联组织专兼职干部提供一个学习、通讯协作的云办公平台，帮助妇联组织变得更加优秀，沟通更加便捷。'
+        },
+        {
+            'links':'http://omc.101.com/goods/product/57',
+            'image':'/html/static/images/product-center/nvxingzhisheng.png',
+            'title':'女性之声',
+            'desc':'全国妇联官方认证的女性社交学习服务平台。专为中国女性和家庭打造，以“反映女性心声、回应女性诉求、维护女性权益、服务女性发展”为目标。'
         }
     ],
     'social':[
         {
-            'links':'http://omc.101.com/product/5.shtml',
+            'links':'http://omc.101.com/goods/product/39',
             'image':'/html/static/images/product-center/huangxiang.png',
             'title':'幻想时代',
             'desc':'幻想时代（StreetVR）是网龙网络公司倾力打造的全新VR游戏分发、运营平台，为商家和玩家提供高品质VR街机游戏解决方案。通过硬件绑...'
         },
         {
-            'links':'http://omc.101.com/product/35.shtml',
+            'links':'http://omc.101.com/goods/product/41',
             'image':'/html/static/images/product-center/star.png',
             'title':'明星APP',
             'desc':'明星app为全球范围的明星建立官方统一平台，打造粉丝经济新模式。通过明星IP的入驻拉动粉丝聚合，为亿万粉丝提供追星服务集合：官方资讯...'
