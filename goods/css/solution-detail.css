@@ -225,7 +225,7 @@
 }
 .case-swiper-block{
     max-height: 380px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .tab-content .swiper-wrapper{
     height: 327px;
@@ -403,10 +403,10 @@
         background-color: #fff;
     }
     .bx-wrapper .bx-next{
-        right:0;
+        right:-12%;
     }
     .bx-wrapper .bx-prev{
-        left:2%;
+        left:-10%;
     }
     .case-swiper .swiper-slide .item-img{
         width:100%;

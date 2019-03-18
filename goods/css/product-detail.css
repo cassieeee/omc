@@ -722,7 +722,7 @@ div:focus{outline:none}
 
 .case-swiper-block {
     max-height: 380px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .honor-swiper-block {
@@ -932,10 +932,10 @@ div:focus{outline:none}
         background-color: #fff;
     }
     .bx-wrapper .bx-next{
-        right:2%;
+        right:-10%;
     }
     .bx-wrapper .bx-prev{
-        left:2%;
+        left:-10%;
     }
     .bx-wrapper .bx-prev:hover {
         border:none;
@@ -944,5 +944,16 @@ div:focus{outline:none}
         background-position: center;
         background-color: #0066ff;
         box-shadow: 0 3px 3px #cadfff;
+    }
+    .bx-wrapper .bx-next:hover {
+        border:none;
+        background-image:url('../images/solution-detail/next-icon-hover.png');
+        background-size: 90% 100%;
+        background-position: center;
+        background-color: #0066ff;
+        box-shadow: 0 3px 3px #cadfff;
+    }
+    .case-swiper-block {
+         width:80%;
     }
 }
